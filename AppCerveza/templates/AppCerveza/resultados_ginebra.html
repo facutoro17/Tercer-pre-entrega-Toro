@@ -1,0 +1,21 @@
+{% extends "AppCerveza/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">Estas son nuestras ginebras cargadas</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+
+{% block resultado %}
+<ol>
+{% for resultado_ginebra in resultado_ginebra %}
+
+<li>{{resultado_ginebra}}</li>
+
+{% endfor %}
+</ol>
+
+{% endblock %}

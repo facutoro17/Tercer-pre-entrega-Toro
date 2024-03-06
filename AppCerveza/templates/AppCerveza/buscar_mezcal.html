@@ -1,0 +1,27 @@
+{% extends "AppCerveza/padre.html" %}
+
+{$ load static %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">Aqui podrás buscar los mezcales que tenemos cargados</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+{% block subtitulo %}
+
+<p class="text-white-75 mb-5">Recuerda que si el mezcal que buscas no está, puedes cargarlo</p>
+
+{% endblock %}
+
+{% block busqueda %}
+
+<form action="/bebidas/resultados_mezcal/" method="GET">
+
+    Ingrese marca de mezcal que desea buscar: <input type="text" name="marca">
+    <input type="submit" value="Buscar">
+
+    
+</form>
+
+{% endblock %}

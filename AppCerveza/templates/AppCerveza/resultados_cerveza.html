@@ -1,0 +1,21 @@
+{% extends "AppCerveza/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">Estas son nuestras cervezas cargadas</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+
+{% block resultado %}
+<ol>
+{% for resultado_cerveza in resultado_cerveza %}
+
+<li>{{resultado_cerveza}}</li>
+
+{% endfor %}
+</ol>
+
+{% endblock %}

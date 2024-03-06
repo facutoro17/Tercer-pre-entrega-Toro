@@ -1,0 +1,21 @@
+{% extends "AppCerveza/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">Carga tu ginebra</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+
+{% block cargar %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+    {{form}}
+    <input type="submit" value="Cargar">
+
+</form>
+
+{% endblock %}

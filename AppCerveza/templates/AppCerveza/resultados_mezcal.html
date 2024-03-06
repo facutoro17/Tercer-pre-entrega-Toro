@@ -1,0 +1,21 @@
+{% extends "AppCerveza/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">Estos son nuestros mezcales</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+
+{% block resultado %}
+<ol>
+{% for resultado_mezcal in resultado_mezcal %}
+
+<li>{{resultado_mezcal}}</li>
+
+{% endfor %}
+</ol>
+
+{% endblock %}

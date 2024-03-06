@@ -1,0 +1,33 @@
+{% extends "AppCerveza/padre.html" %}
+
+{% load static %}
+
+{% block navegacion %}
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">Inicio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="buscar_cerveza">Buscar cervezas</a></li>
+                <li class="nav-item"><a class="nav-link" href="buscar_mezcal">Buscar mezcales</a></li>
+                <li class="nav-item"><a class="nav-link" href="buscar_ginebra">Buscar Ginebras</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% endblock %}
+
+{% block titulo %}
+
+<h1 class="text-white font-weight-bold">¡Bienvenidos a mi página! La favorita para escoger bebidas</h1>
+                        <hr class="divider" />
+{% endblock %}
+
+{% block subtitulo %}
+
+<p class="text-white-75 mb-5">Aquí podrás encontrar diferentes tipos de destilados, con sus especificaciones y marcas correspondientes, además podras cargar tus propias bebidas</p>
+
+{% endblock %}
